@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 25: expected ':' not found.
+    label lake
+              ^
+
+Ren'Py Version: Ren'Py 8.3.0.24031101+nightly
+Tue Mar 12 14:09:53 2024
