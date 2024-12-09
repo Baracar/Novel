@@ -1,60 +1,74 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 40, in script
-    call screen trash
+  File "game/script.rpy", line 33, in script
+    call screen homeLoc
   File "renpy/common/000statements.rpy", line 671, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/common/00action_other.rpy", line 586, in __call__
-    rv = self.callable(*self.args, **self.kwargs)
-  File "game/script.rpy", line 86, in found_item
-    jump WIP
-NameError: name 'jump' is not defined
+  File "game/map.rpy", line 2, in execute
+    screen homeLoc:
+  File "game/map.rpy", line 2, in execute
+    screen homeLoc:
+  File "game/map.rpy", line 3, in execute
+    if lakeVisited:
+  File "game/map.rpy", line 10, in execute
+    imagebutton:
+  File "game/map.rpy", line 10, in keywords
+    imagebutton:
+  File "game/map.rpy", line 14, in <module>
+    action Jump(lakeSecond)
+NameError: name 'lakeSecond' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 40, in script
-    call screen trash
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\ast.py", line 1968, in execute
+  File "game/script.rpy", line 33, in script
+    call screen homeLoc
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
     self.call("execute")
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\ast.py", line 1950, in call
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
     return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\statements.py", line 349, in call
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
     return method(parsed, *args, **kwargs)
   File "renpy/common/000statements.rpy", line 671, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\exports.py", line 3418, in call_screen
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 345, in call_screen
     rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\ui.py", line 301, in interact
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\core.py", line 3201, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\layout.py", line 1202, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\layout.py", line 1202, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\layout.py", line 1202, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\screen.py", line 793, in event
-    rv = self.child.event(ev, x, y, st)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\layout.py", line 1202, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\behavior.py", line 1174, in event
-    return handle_click(self.clicked)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\behavior.py", line 1095, in handle_click
-    rv = run(action)
-  File "C:\Users\Radias\Documents\renpy-8.2.1-sdk\renpy\display\behavior.py", line 395, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_other.rpy", line 586, in __call__
-    rv = self.callable(*self.args, **self.kwargs)
-  File "game/script.rpy", line 86, in found_item
-    jump WIP
-NameError: name 'jump' is not defined
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/map.rpy", line 2, in execute
+    screen homeLoc:
+  File "game/map.rpy", line 2, in execute
+    screen homeLoc:
+  File "game/map.rpy", line 3, in execute
+    if lakeVisited:
+  File "game/map.rpy", line 10, in execute
+    imagebutton:
+  File "game/map.rpy", line 10, in keywords
+    imagebutton:
+  File "game/map.rpy", line 14, in <module>
+    action Jump(lakeSecond)
+NameError: name 'lakeSecond' is not defined
 
-Windows-10-10.0.26100 AMD64
-Ren'Py 8.3.0.24031101+nightly
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.3.24111502
 Novel 1.0
-Mon Dec  9 19:40:43 2024
+Mon Dec  9 22:09:26 2024

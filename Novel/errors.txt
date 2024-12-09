@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 53: keyword argument 'align' is incompatible with 'ypos'.
-    align (0.5, 0.5)
-         ^
+File "game/map.rpy", line 18: 'lakeVisited' is not a keyword argument or valid child of the screen statement.
+    lakeVisited = True
+               ^
 
-File "game/script.rpy", line 63: keyword argument 'align' is incompatible with 'ypos'.
-    align (0.5, 0.5)
-         ^
-
-File "game/script.rpy", line 73: keyword argument 'align' is incompatible with 'ypos'.
-    align (0.5, 0.5)
-         ^
-
-Ren'Py Version: Ren'Py 8.3.0.24031101+nightly
-Mon Dec  9 19:53:46 2024
+Ren'Py Version: Ren'Py 8.3.3.24111502
+Mon Dec  9 22:17:39 2024

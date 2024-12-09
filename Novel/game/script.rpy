@@ -30,7 +30,7 @@ label start:
         "Навести порядок.":
             jump clean
         "Прогуляться.":
-            jump lake
+            call screen homeLoc
     return
 
 label clean:
@@ -92,6 +92,7 @@ init python:
 
 ## озеро
 label lake:
+    $ lakeVisited = True
     scene house
     show mc_neutral
     mc "Лучше схожу на прогулку, интересно, как многое тут успело измениться."
@@ -100,8 +101,20 @@ label lake:
     scene lake
     show mc_neutral
 
-    jump work_in_progress
+    call screen lakeLoc
 
+default homeVisited = True
+label homeSecond:
+    scene room
+    "Вы снова дома"
+    call screen homeLoc
+
+
+default lakeVisited = False
+label lakeSecond:
+    scene lake
+    "Вы снова на озере"
+    call screen lakeLoc
 
 
 label work_in_progress:
