@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 25: expected ':' not found.
-    label lake
-              ^
+File "game/script.rpy", line 53: keyword argument 'align' is incompatible with 'ypos'.
+    align (0.5, 0.5)
+         ^
+
+File "game/script.rpy", line 63: keyword argument 'align' is incompatible with 'ypos'.
+    align (0.5, 0.5)
+         ^
+
+File "game/script.rpy", line 73: keyword argument 'align' is incompatible with 'ypos'.
+    align (0.5, 0.5)
+         ^
 
 Ren'Py Version: Ren'Py 8.3.0.24031101+nightly
-Tue Mar 12 14:09:53 2024
+Mon Dec  9 19:53:46 2024

@@ -33,14 +33,64 @@ label start:
             jump lake
     return
 
-
 label clean:
     "Вы решаете разобраться с вещами в доме, чтобы сделать его более уютным. Начнем с того, чтобы найти место для своих вещей и, возможно, немного привести в порядок кухню."
 
-    "В разработке."
-    return
+    while len(found_items) < 3:
+        call screen trash
 
 
+## уборка
+screen trash:
+    # Носки
+    if "носки" not in found_items:
+        imagebutton:
+            idle "trash/socks.png"
+            xpos 100
+            ypos 800
+            action Function(found_item, "носки")  
+
+    # Мусор
+    if "мусор" not in found_items:
+        imagebutton:
+            idle "trash/garbage.png"
+            xpos 1500
+            ypos 750
+            action Function(found_item, "мусор")  
+
+    # Плесень
+    if "плесень" not in found_items:
+        imagebutton:
+            idle "trash/mold.png"
+            xpos 1200
+            ypos 400
+            action Function(found_item, "плесень")  
+
+    text "Найдите все предметы!" xpos 10 ypos 10
+
+
+    
+
+
+init python:
+    found_items = []
+
+    def found_item(item_name):
+        if item_name not in found_items:
+            found_items.append(item_name)
+            renpy.notify(f"Вы убрали {item_name}")
+        
+        # Если все 3 предмета найдены
+        if len(found_items) == 3:
+            renpy.notify("Вы закончили уборку! Дома теперь куда уютнее!")
+            renpy.jump("work_in_progress")
+
+
+
+
+
+
+## озеро
 label lake:
     scene house
     show mc_neutral
@@ -50,5 +100,10 @@ label lake:
     scene lake
     show mc_neutral
 
+    jump work_in_progress
+
+
+
+label work_in_progress:
     "В разработке."
     return
