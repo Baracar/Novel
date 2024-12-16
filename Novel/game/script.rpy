@@ -9,6 +9,8 @@ image house = "bg/house.jpg"
 image room = "bg/room.jpg"
 image lake = "bg/lake.jpg"
 
+#переменные
+default location = 'home'
 
 #старотовая позиция
 label start:
@@ -30,7 +32,8 @@ label start:
         "Навести порядок.":
             jump clean
         "Прогуляться.":
-            call screen homeLoc
+            $location = 'home'
+            call screen idleScreen
     return
 
 label clean:
@@ -101,20 +104,23 @@ label lake:
     scene lake
     show mc_neutral
 
-    call screen lakeLoc
+    $location = 'lake'
+    call screen idleScreen
 
 default homeVisited = True
 label homeSecond:
     scene room
     "Вы снова дома"
-    call screen homeLoc
+    $location = 'home'
+    call screen idleScreen
 
 
 default lakeVisited = False
 label lakeSecond:
     scene lake
     "Вы снова на озере"
-    call screen lakeLoc
+    $location = 'lake'
+    call screen idleScreen
 
 
 label work_in_progress:
