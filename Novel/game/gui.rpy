@@ -52,7 +52,7 @@ define gui.muted_color = '#510000'
 define gui.hover_muted_color = '#7a0000'
 
 ## Цвета, используемые в тексте диалогов и выборов.
-define gui.text_color = '#ffffff'
+define gui.text_color = '#3a2014'
 define gui.interface_text_color = '#ffffff'
 
 
@@ -68,7 +68,7 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## Размер нормального текста диалога.
-define gui.text_size = 33
+define gui.text_size = 31
 
 ## Размер имён персонажей.
 define gui.name_text_size = 45

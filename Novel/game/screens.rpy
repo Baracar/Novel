@@ -139,10 +139,10 @@ style window:
     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
-    xpos gui.name_xpos
+    xpos gui.name_xpos+50
     xanchor gui.name_xalign
     xsize gui.namebox_width
-    ypos gui.name_ypos
+    ypos gui.name_ypos+20
     ysize gui.namebox_height
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
@@ -158,7 +158,7 @@ style say_dialogue:
 
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
+    ypos gui.dialogue_ypos+15
 
     adjust_spacing False
 
@@ -247,7 +247,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.97
 
             textbutton _("Назад") action Rollback()
             textbutton _("История") action ShowMenu('history')

@@ -2,21 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 35: expected statement.
-    location = 'home'
-             ^
+File "game/map/kitchen.rpy", line 11: Tab characters are not allowed in Ren'Py scripts.
 
-File "game/script.rpy", line 107: expected statement.
-    location = 'lake'
-             ^
-
-File "game/script.rpy", line 114: expected statement.
-    location = 'home'
-             ^
-
-File "game/script.rpy", line 122: expected statement.
-    location = 'lake'
-             ^
-
-Ren'Py Version: Ren'Py 8.3.3.24111502
-Mon Dec 16 21:39:51 2024
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Tue Jan 28 14:24:21 2025

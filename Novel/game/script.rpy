@@ -1,5 +1,7 @@
 ﻿#персонажи
-define mc = Character('Вы', color="#c8ffc8")
+define mc = Character('Вы', color="#3a2014")
+define father = Character('Отец', color="#3a2014")
+define book_sealer = Character('Продавец книг', color="#3a2014")
 
 #спрайты гг
 image mc_neutral = "mc/mc_neutral.png"
@@ -15,6 +17,20 @@ default location = 'home'
 #старотовая позиция
 label start:
     scene house
+    jump street
+
+
+
+
+
+
+
+
+
+
+
+
+
     "Вы прибываете в домик, который стал вашим новым жилищем. Все вокруг кажется каким-то давно забытым, как будто время здесь остановилось."
 
     show mc_neutral
