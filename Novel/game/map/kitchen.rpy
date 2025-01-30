@@ -10,7 +10,7 @@ screen kitchen:
         action Jump("home")
 label kitchen:
     scene kitchen
-    if first_visit_home:
+    if first_visit_kitchen:
         show father normal
         father "Ну и шуточки у тебя. Если хотел кофе с молоком, мог бы себе сделать отдельно, не обязательно было в мой подмешивать."
         mc "О чём ты? Я даже не заходил ещё на кухню."
