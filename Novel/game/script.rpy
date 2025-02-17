@@ -16,21 +16,13 @@ default location = 'home'
 
 #старотовая позиция
 label start:
-    scene house
+    show screen inventory_button
     jump street
 
 
 
 
-
-
-
-
-
-
-
-
-
+    scene house
     "Вы прибываете в домик, который стал вашим новым жилищем. Все вокруг кажется каким-то давно забытым, как будто время здесь остановилось."
 
     show mc_neutral

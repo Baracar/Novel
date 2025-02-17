@@ -1,92 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While parsing game/map/attic.rpy.
-  File "game/map/attic.rpy", line 43, in script
-    call screen attic
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/common/00director.rpy", line 1338, in event
-    rv = self.child.event(ev, x, y, st)
-  File "renpy/common/00director.rpy", line 1028, in __call__
-    update_ast()
-  File "renpy/common/00director.rpy", line 461, in update_ast
-    renpy.scriptedit.add_to_ast_before(statement, state.filename, linenumber)
-ScriptError: could not find label '('game/map/home.rpy', 1738004230, 19)'.
+While running game code:
+  File "game/simple_inventory.rpy", line 203, in script
+    show expression Text($items[item_id][2])
+SyntaxError: invalid syntax (game/simple_inventory.rpy, line 203)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/map/attic.rpy", line 43, in script
-    call screen attic
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
-    self.call("execute")
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 345, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\core.py", line 3286, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\screen.py", line 791, in event
-    rv = self.child.event(ev, x, y, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/common/00director.rpy", line 1338, in event
-    rv = self.child.event(ev, x, y, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1526, in event
-    rv = super(Window, self).event(ev, x, y, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 285, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1526, in event
-    rv = super(Window, self).event(ev, x, y, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 285, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 285, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\viewport.py", line 589, in event
-    rv = super(Viewport, self).event(ev, x, y, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 285, in event
-    rv = d.event(ev, x - xo, y - yo, st)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\behavior.py", line 1182, in event
-    return handle_click(self.clicked)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\behavior.py", line 1103, in handle_click
-    rv = run(action)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\display\behavior.py", line 401, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00director.rpy", line 1028, in __call__
-    update_ast()
-  File "renpy/common/00director.rpy", line 461, in update_ast
-    renpy.scriptedit.add_to_ast_before(statement, state.filename, linenumber)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\scriptedit.py", line 365, in add_to_ast_before
-    renpy.game.log.replace_node(old, block[0])
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\rollback.py", line 596, in replace_node
-    i.context.replace_node(old, new)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\execution.py", line 354, in replace_one
-    n = renpy.game.script.lookup(name)
-  File "C:\Users\Adelina\Desktop\renpy-8.3.4-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label '('game/map/home.rpy', 1738004230, 19)'.
+  File "game/simple_inventory.rpy", line 203, in script
+    show expression Text($items[item_id][2])
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1067, in show_imspec
+    expression = renpy.python.py_eval(expression)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\python.py", line 1207, in py_eval
+    code = py_compile(code, 'eval')
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/simple_inventory.rpy, line 203)
 
-Windows-10-10.0.22631 AMD64
-Ren'Py 8.3.4.24120703
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.3.24111502
 Novel 1.0
-Tue Jan 28 16:33:28 2025
+Mon Feb 17 22:35:57 2025
