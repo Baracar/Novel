@@ -1,10 +1,12 @@
-image attic = im.Scale("images/bg/attic.jpg", 1920, 1080)
+image attic = im.Scale("images/bg/attic.png", 1920, 1080)
+#image closet = im.Scale
 
 default first_visit_attic = True
 default heap_game = True
 default poster = False
 default table = False
 default closet = False
+default bed = False
 
 screen attic:
     if closet and table:
@@ -15,22 +17,28 @@ screen attic:
             action Jump("home")
     if not table:
         imagebutton:
-            idle "table.jpg"
-            xpos 25
-            ypos 570
+            idle im.Scale("table.png", 611.25, 286.875)
+            xpos 490
+            ypos 693
             action Jump("table")
     if not closet:
         imagebutton:
-            idle "closet.png"
-            xpos 1550
-            ypos 670
-            action Jump("closet")
-    if not poster:
+            idle im.Scale("closet.png", 496.75, 838.125)
+            xpos 1131
+            ypos 239
+            action Jump("tetris_start")
+    if not bed:
         imagebutton:
-            idle "poster.png"
-            xpos 1550
-            ypos 170
-            action Jump("poster")
+            idle im.Scale("bed.png", 460.3, 351.5)
+            xpos 46
+            ypos 724
+            action Jump("bed")
+#     if not poster:
+#         imagebutton:
+#             idle "poster.png"
+#             xpos 1550
+#             ypos 170
+#             action Jump("poster")
 
 
 
@@ -51,6 +59,11 @@ label table:
 label closet:
     "Мини игра по раскладыванию вещей в шкафу"
     $closet = True
+    call screen attic
+
+label bed:
+    "Мини игра по раскладыванию вещей в шкафу"
+    $bed = True
     call screen attic
 
 label poster:
