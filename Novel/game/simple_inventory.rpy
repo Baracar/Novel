@@ -22,10 +22,10 @@ init 444 python:
     IClickSlot = renpy.curry(iclick_slot)
 
 # можно написать свою функцию для обработки кликов по предметам
-init -4 python:
-    def iclick_slot(id):
-        renpy.notify(_("Это ") + items[id][0] + ".")
-    IClickSlot = renpy.curry(iclick_slot)
+# init -4 python:
+#     def iclick_slot(id):
+#         renpy.notify(_("Это ") + items[id][0] + ".")
+#     IClickSlot = renpy.curry(iclick_slot)
 
 # можно добавить комментарии при собирании предметов, что вызывается из iclick(id):
 init -4 python:
@@ -187,33 +187,7 @@ init -5 python:
     IClick = renpy.curry(iclick)
 
     # клик по предмету в инвентаре
-    def iclick_slot(id):
-        pass
+#     def iclick_slot(id):
+#         pass
 
-    IClickSlot = renpy.curry(iclick_slot)
-
-default iclicked_id = None
-
-# показать предмет при клике по нему в слоте
-label iclick_slot:
-    if not iclicked_id:
-        return
-
-    window hide
-#     show expression Text(item_desc)
-    show screen description
-    pause
-    hide screen description
-
-screen description:
-    text item_desc
-
-#     show expression ImageButton(iclicked_id, focus_mask=True, clicked=Function(renpy.end_interaction, 1)) as iclicked_id at truecenter
-#
-#     $ renpy.transition(dissolve)
-#     $ renpy.restart_interaction()
-#
-#     pause
-#
-#     $ renpy.transition(dissolve)
-#     return
+#     IClickSlot = renpy.curry(iclick_slot)

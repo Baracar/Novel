@@ -1,3 +1,16 @@
+init:
+    image Items milk_jug = Image("images/Items/milk_jug.png")
+    image Items book_myth = Image("images/Items/myph_kzn_book.png")
+    image Items photo_child = Image("images/Items/photo_baby.png")
+    image Items toy_car = Image("images/Items/toy_auto.png")
+    image Items bill_electricity = Image("images/Items/electricity_bill.png")
+    image Items newspaper = Image("images/Items/newspaper.png")
+    image Items kefir = Image("images/Items/kefir_bottle.png")
+    image Items poster_edge = Image("images/Items/poster_edge.png")
+    image Items coin = Image("images/Items/coin.png")
+    image Items father_info = Image("images/Items/file_father.png")
+    image Items grandma_info = Image("images/Items/file_abi.png")
+
 init python:
     class item:
         def __init__(self, name, image, desc):
@@ -36,22 +49,33 @@ init python:
 #         store.iclicked_id = ipath + " " + id
         store.item_desc = items[id][2]
         # нужно создать свой label или использовать уже готовый, как здесь
-        renpy.call_in_new_context("iclick_slot")
-
-init:
-    image Items milk_jug = Image("images/Items/milk_jug.png")
-    image Items book_myth = Image("images/Items/myph_kzn_book.png")
-    image Items photo_child = Image("images/Items/photo_baby.png")
-    image Items toy_car = Image("images/Items/toy_auto.png")
-    image Items bill_electricity = Image("images/Items/electricity_bill.png")
-    image Items newspaper = Image("images/Items/newspaper.png")
-    image Items kefir = Image("images/Items/kefir_bottle.png")
-    image Items poster_edge = Image("images/Items/poster_edge.png")
-    image Items coin = Image("images/Items/coin.png")
-    image Items father_info = Image("images/Items/file_father.png")
-    image Items grandma_info = Image("images/Items/file_abi.png")
+        renpy.call_in_new_context ("iclick_slot")
 
 
+
+default iclicked_id = None
+
+# показать предмет при клике по нему в слоте
+label iclick_slot:
+#     if not iclicked_id:
+#         return
+
+    window hide
+    show screen description
+
+    $ renpy.transition(dissolve)
+    $ renpy.restart_interaction()
+
+    pause
+
+    $ renpy.transition(dissolve)
+    return
+
+
+screen description:
+    modal True
+    text "[item_desc]" size 50 xalign 0.5 yalign 0.32
+    textbutton "Close" xalign 0.5 yalign 0.45 action Hide("description")
 
 #     class milk_jug:
 #         name = "Молочник"

@@ -19,8 +19,6 @@ screen street:
 label street:
     scene street
 
-    show screen code_lock
-
     if first_visit_street == 0:
         mc "Странно, не видно грузовика с вещами. Наверно всё уже занесли."
         mc "Я здесь ни разу не был. В этом доме жил отец с родителями, пока не вырос."
