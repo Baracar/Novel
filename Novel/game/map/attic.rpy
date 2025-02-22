@@ -20,7 +20,7 @@ screen attic:
             idle im.Scale("table.png", 611.25, 286.875)
             xpos 490
             ypos 693
-            action Jump("table")
+            action Jump("puzzle_pieces")
     if not closet:
         imagebutton:
             idle im.Scale("closet.png", 496.75, 838.125)
@@ -32,7 +32,7 @@ screen attic:
             idle im.Scale("bed.png", 460.3, 351.5)
             xpos 46
             ypos 724
-            action Jump("bed")
+            action Jump("slide_block_puzzle")
 #     if not poster:
 #         imagebutton:
 #             idle "poster.png"
