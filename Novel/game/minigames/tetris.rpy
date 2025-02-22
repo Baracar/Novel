@@ -137,7 +137,7 @@ init python:
 
         def new(self):
             if(self.details == self.details_max):
-                renpy.jump("attic")
+                renpy.jump("attic_tetris")
             self.details = self.details + 1
             self.line_checker()
 
@@ -666,6 +666,7 @@ screen game_over():
     textbutton 'RETRY' action Hide('game_over'), Jump('tetris_reload') align .5,.9
 
 label tetris_start:
+    #ADD TEXT тест перед тетрисом
     #call screen difficulty_choice
     $ set_mode_classic()
 

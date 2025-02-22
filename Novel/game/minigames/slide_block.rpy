@@ -142,7 +142,7 @@ init python:
                                 click_pos[0] = renpy.get_mouse_pos()[0]
                             if (block.type == "red" and block2.type == "goal") and block.x + block.size[0] == block2.x:
                                 #current_puzzle = 2
-                                renpy.jump("solved_puzzle")
+                                renpy.jump("attic_slide")
                                 return None
         return 0
 
@@ -172,13 +172,13 @@ screen unblock_puzzle:
     image "slide_blocks/puzzle-frame.png" pos puzzle_frame_pos
     add block_SM
 
-label solved_puzzle:
-    "I solved the puzzle!"
-    $bed = True
-    jump attic
+# label solved_puzzle:
+#     "I solved the puzzle!"
+#     $bed = True
+#     jump attic
 
 label scene_1:
-    "Here's some dialogue text."
+    #ADD TEXT тест перед решением паззла с блоками
     $create_blocks()
     call screen unblock_puzzle
 

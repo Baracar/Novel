@@ -2,14 +2,15 @@ image attic = im.Scale("images/bg/attic.png", 1920, 1080)
 #image closet = im.Scale
 
 default first_visit_attic = True
-default heap_game = True
+default in_dark = False
+
 default poster = False
 default table = False
 default closet = False
 default bed = False
 
 screen attic:
-    if closet and table:
+    if (closet and table) or debug:
         imagebutton:
             idle "arrow_down"
             xpos 950
@@ -48,22 +49,28 @@ label attic:
     if first_visit_attic:
         mc "Нужно разложить свои вещи."
         $first_visit_attic = False
+    elif after_take_book:
+        $after_take_book = False
+        "*Читает*"
+        mc "Ого, уже вечер. Время так быстро пролетело."
+#ADD добавить переход в тёмный
+        $in_dark = True
 
     call screen attic
 
 
-label table:
-    "Мини игра по раскладыванию вещей на столе"
+label attic_puzzle:
+    #ADD TEXT тест после решения паззла с бумажками
     $table = True
     call screen attic
 
-label closet:
-    "Мини игра по раскладыванию вещей в шкафу"
+label attic_tetris:
+    #ADD TEXT тест после решения тетриса
     $closet = True
     call screen attic
 
-label bed:
-    "Мини игра по раскладыванию вещей в шкафу"
+label attic_slide:
+    #ADD TEXT тест после решения паззла с блоками
     $bed = True
     call screen attic
 

@@ -113,11 +113,14 @@ label puzzle_pieces(number):
 
     show screen drag_pieces
     $ can_move = True
-    "Place images."
+    #ADD TEXT тест во время решения бумажек
     $ can_move = False
     $ renpy.pause(1.0)
     hide screen drag_pieces
-    return
+    if number == 1:
+        call attic_puzzle
+    else:
+        call attic_puzzle
 
 label drag_quit:
     $ can_move = False

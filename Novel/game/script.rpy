@@ -1,7 +1,7 @@
 ﻿#персонажи
 define mc = Character('Вы', color="#3a2014")
 define father = Character('Отец', color="#3a2014")
-define book_sealer = Character('Продавец книг', color="#3a2014")
+define book_seller = Character('[book_seller_name]', color="#3a2014")
 
 #спрайты гг
 image mc_neutral = "mc/mc_neutral.png"
@@ -12,7 +12,10 @@ image mc_neutral = "mc/mc_neutral.png"
 # image lake = "bg/lake.jpg"
 
 #переменные
+default book_seller_name = "Продавец книг"
 default location = 'home'
+
+default debug = True
 
 #старотовая позиция
 label start:

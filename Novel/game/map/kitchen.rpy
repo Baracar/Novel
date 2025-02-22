@@ -11,6 +11,7 @@ screen kitchen:
 label kitchen:
     scene kitchen
     if first_visit_kitchen:
+        $first_visit_kitchen = False
         show father normal
         father "Ну и шуточки у тебя. Если хотел кофе с молоком, мог бы себе сделать отдельно, не обязательно было в мой подмешивать."
         mc "О чём ты? Я даже не заходил ещё на кухню."
@@ -22,7 +23,7 @@ label kitchen:
         father "А книги… Эти уже много раз прочитаны, не думаю, что мы будем их читать ещё раз."
         father "Может кому-нибудь они пригодятся."
         hide father normal
-        $first_visit_home = False
+#         $first_visit_home = False
 
     $street_open = True
 
