@@ -52,48 +52,58 @@ init python:
 
         return
 
-label puzzle_pieces:
-
+label puzzle_pieces(number):
     $ can_move = False
     $ field_x_pos = 0
     $ field_y_pos = 0
+    if number == 1:
     # list of pieces
-    $ pieces_list =[
-        {"ind":0, "img":"present/fortune/0_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":1, "img":"present/fortune/1_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":2, "img":"present/fortune/2_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":3, "img":"present/fortune/3_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":4, "img":"present/fortune/4_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":5, "img":"present/fortune/5_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":6, "img":"present/fortune/6_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":7, "img":"present/fortune/7_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":8, "img":"present/fortune/8_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":9, "img":"present/fortune/9_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":10, "img":"present/fortune/10_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":11, "img":"present/fortune/11_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":12, "img":"present/fortune/12_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":13, "img":"present/fortune/13_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        {"ind":14, "img":"present/fortune/14_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-        ] # "ind" is an index of the item in the list, so we can use it later
+        $ pieces_list =[
+            {"ind":0, "img":"present/fortune/0_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":1, "img":"present/fortune/1_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":2, "img":"present/fortune/2_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":3, "img":"present/fortune/3_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":4, "img":"present/fortune/4_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":5, "img":"present/fortune/5_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":6, "img":"present/fortune/6_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":7, "img":"present/fortune/7_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":8, "img":"present/fortune/8_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":9, "img":"present/fortune/9_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":10, "img":"present/fortune/10_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":11, "img":"present/fortune/11_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":12, "img":"present/fortune/12_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":13, "img":"present/fortune/13_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":14, "img":"present/fortune/14_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            ]
+        $ places_list = [
+            {"ind":0, "img":"present/fortune/0_drop.png", "x_pos":762, "y_pos":746},
+            {"ind":1, "img":"present/fortune/1_drop.png", "x_pos":752, "y_pos":0},
+            {"ind":2, "img":"present/fortune/2_drop.png", "x_pos":966, "y_pos":502},
+            {"ind":3, "img":"present/fortune/3_drop.png", "x_pos":759, "y_pos":571},
+            {"ind":4, "img":"present/fortune/4_drop.png", "x_pos":982, "y_pos":336},
+            {"ind":5, "img":"present/fortune/5_drop.png", "x_pos":986, "y_pos":199},
+            {"ind":6, "img":"present/fortune/6_drop.png", "x_pos":750, "y_pos":143},
+            {"ind":7, "img":"present/fortune/7_drop.png", "x_pos":1236, "y_pos":440},
+            {"ind":8, "img":"present/fortune/8_drop.png", "x_pos":1112, "y_pos":176},
+            {"ind":9, "img":"present/fortune/9_drop.png", "x_pos":1322, "y_pos":578},
+            {"ind":10, "img":"present/fortune/10_drop.png", "x_pos":1605, "y_pos":652},
+            {"ind":11, "img":"present/fortune/11_drop.png", "x_pos":1466, "y_pos":226},
+            {"ind":12, "img":"present/fortune/12_drop.png", "x_pos":1620, "y_pos":0},
+            {"ind":13, "img":"present/fortune/13_drop.png", "x_pos":1348, "y_pos":0},
+            {"ind":14, "img":"present/fortune/14_drop.png", "x_pos":1222, "y_pos":0},
+            ]
+    elif number == 2:
+        $ pieces_list =[
+            {"ind":0, "img":"present/fortune/0_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":1, "img":"present/fortune/1_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":2, "img":"present/fortune/2_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            ]
+        $places_list = [
+            {"ind":0, "img":"present/fortune/0_drop.png", "x_pos":762, "y_pos":746},
+            {"ind":1, "img":"present/fortune/1_drop.png", "x_pos":752, "y_pos":0},
+            {"ind":2, "img":"present/fortune/2_drop.png", "x_pos":966, "y_pos":502},
+            ]
 
-    # list of corresponding places ("ind" value does matter)
-    $ places_list = [
-        {"ind":0, "img":"present/fortune/0_drop.png", "x_pos":762, "y_pos":746},
-        {"ind":1, "img":"present/fortune/1_drop.png", "x_pos":752, "y_pos":0},
-        {"ind":2, "img":"present/fortune/2_drop.png", "x_pos":966, "y_pos":502},
-        {"ind":3, "img":"present/fortune/3_drop.png", "x_pos":759, "y_pos":571},
-        {"ind":4, "img":"present/fortune/4_drop.png", "x_pos":982, "y_pos":336},
-        {"ind":5, "img":"present/fortune/5_drop.png", "x_pos":986, "y_pos":199},
-        {"ind":6, "img":"present/fortune/6_drop.png", "x_pos":750, "y_pos":143},
-        {"ind":7, "img":"present/fortune/7_drop.png", "x_pos":1236, "y_pos":440},
-        {"ind":8, "img":"present/fortune/8_drop.png", "x_pos":1112, "y_pos":176},
-        {"ind":9, "img":"present/fortune/9_drop.png", "x_pos":1322, "y_pos":578},
-        {"ind":10, "img":"present/fortune/10_drop.png", "x_pos":1605, "y_pos":652},
-        {"ind":11, "img":"present/fortune/11_drop.png", "x_pos":1466, "y_pos":226},
-        {"ind":12, "img":"present/fortune/12_drop.png", "x_pos":1620, "y_pos":0},
-        {"ind":13, "img":"present/fortune/13_drop.png", "x_pos":1348, "y_pos":0},
-        {"ind":14, "img":"present/fortune/14_drop.png", "x_pos":1222, "y_pos":0},
-        ]
 
     # sets random coordinates for pieces
     python:

@@ -1,4 +1,4 @@
-image kitchen = im.Scale("images/bg/kitchen.jpg", 1920, 1080)
+image kitchen = im.Scale("locations/kitchen/bg.png", 1920, 1080)
 
 default first_visit_kitchen = True
 

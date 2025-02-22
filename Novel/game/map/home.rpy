@@ -1,4 +1,4 @@
-image house = im.Scale("images/bg/house.jpg", 1920, 1080)
+image home = im.Scale("locations/home/bg.png", 1920, 1080)
 
 default first_visit_home = True
 default street_open = False
@@ -28,7 +28,7 @@ screen home:
             ypos 950
             action Jump("street")
 label home:
-    scene room
+    scene home
 
     if first_visit_home:
         #$first_visit_street = False

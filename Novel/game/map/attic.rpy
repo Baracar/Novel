@@ -20,7 +20,7 @@ screen attic:
             idle im.Scale("table.png", 611.25, 286.875)
             xpos 490
             ypos 693
-            action Jump("puzzle_pieces")
+            action Call("puzzle_pieces", 2)
     if not closet:
         imagebutton:
             idle im.Scale("closet.png", 496.75, 838.125)
@@ -44,6 +44,7 @@ screen attic:
 
 label attic:
     scene attic
+    $ puzzle = 2
     if first_visit_attic:
         mc "Нужно разложить свои вещи."
         $first_visit_attic = False

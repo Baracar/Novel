@@ -1,52 +1,19 @@
-2025-02-22 12:51:17 UTC
+2025-02-22 13:41:50 UTC
 Windows-10-10.0.26100
 Ren'Py 8.3.3.24111502
 
-Early init took 0.05s
-Loading error handling took 0.25s
-Loading script took 0.31s
-Loading save slot metadata took 0.15s
+Early init took 0.04s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
-
-File "game/minigames/slide_ block.rpy", line 199: invalid character '（' (U+FF08)
-    long_v_block_size =（151,454)
-                        ^
-
-File "game/minigames/slide_ block.rpy", line 201: invalid character '（' (U+FF08)
-    short_v_block_size =（151,303)
-                         ^
-
-File "game/minigames/slide_ block.rpy", line 204: invalid character '（' (U+FF08)
-    puzzle_frame_pos =（110,71)
-                       ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.81s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 38.40s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.06s
+Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.06s
+Reloading save slot metadata took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
-Dump and make backups took 0.04s
+Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.02s
@@ -57,120 +24,14 @@ Creating interface object took 0.16s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/minigames/slide_ block.rpy", line 184, in script
-    $create_blocks()
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 821, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/minigames/slide_ block.rpy", line 184, in <module>
-    $create_blocks()
-  File "game/minigames/slide_ block.rpy", line 9, in create_blocks
-    block_SM.redraw(e) # Redraw the spritemanager to update it.
-NameError: name 'e' is not defined
-
-While running game code:
-  File "game/minigames/slide_ block.rpy", line 184, in script
-    $create_blocks()
-  File "game/minigames/slide_ block.rpy", line 184, in <module>
-    $create_blocks()
-  File "game/minigames/slide_ block.rpy", line 9, in create_blocks
-    block_SM.redraw(e) # Redraw the spritemanager to update it.
-NameError: name 'e' is not defined
-Resetting cache.
-Early init took 75.02s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.20s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 149.00s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.04s
 Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.24s
+Interface start took 0.57s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -183,157 +44,17 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 229.38s
-Loading error handling took 0.01s
+Early init took 69.69s
+Loading error handling took 0.02s
 Loading script took 0.07s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/minigames/slide_ block.rpy", line 185, in script
-    call screen unblock_puzzle
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
-    self.call("execute")
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 345, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2879, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 1381, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 754, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\particle.py", line 267, in render
-    redraw = self.update_function(st)
-  File "game/minigames/slide_ block.rpy", line 119, in blocks_update
-    click_pos[1] = renpy-get_mouse_pos()[1]
-NameError: name 'get_mouse_pos' is not defined
-
-While loading <renpy.display.im.Image object ('goal-vertical.png') at 0x0000000004db0220>:
-  File "game/minigames/slide_ block.rpy", line 185, in script
-    call screen unblock_puzzle
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/minigames/slide_ block.rpy", line 119, in blocks_update
-    click_pos[1] = renpy-get_mouse_pos()[1]
-NameError: name 'get_mouse_pos' is not defined
-Resetting cache.
-Early init took 276.27s
-Loading error handling took 0.01s
-Loading script took 0.11s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.02s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 279.58s
-Loading error handling took 0.01s
-Loading script took 0.07s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.01s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -343,14 +64,14 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
 Creating interface object took 0.16s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
 Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.01s
 Running _start took 0.00s
 Interface start took 0.21s
 
@@ -364,277 +85,10 @@ Version: b'4.6.0 NVIDIA 572.16'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/minigames/slide_ block.rpy", line 185, in script
-    call screen unblock_puzzle
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
-    self.call("execute")
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 345, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2879, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 1381, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 754, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\particle.py", line 267, in render
-    redraw = self.update_function(st)
-  File "game/minigames/slide_ block.rpy", line 139, in blocks_update
-    elif block.x + block.size[0] > (puzzle_frame_pos[0] + puzzle_frame_size[o]) - 15:
-NameError: name 'o' is not defined
-
-While loading <renpy.display.im.Image object ('goal-vertical.png') at 0x000000000079ffa0>:
-  File "game/minigames/slide_ block.rpy", line 185, in script
-    call screen unblock_puzzle
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/minigames/slide_ block.rpy", line 139, in blocks_update
-    elif block.x + block.size[0] > (puzzle_frame_pos[0] + puzzle_frame_size[o]) - 15:
-NameError: name 'o' is not defined
 Resetting cache.
-Early init took 303.92s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 403.37s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 445.65s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 458.62s
+Early init took 89.48s
 Loading error handling took 0.01s
 Loading script took 0.07s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 495.04s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-Running init code took 0.02s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 572.16'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 520.88s
-Loading error handling took 0.01s
-Loading script took 0.08s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
 Running init code took 0.02s
@@ -661,7 +115,7 @@ Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
-Interface start took 0.25s
+Interface start took 0.24s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -674,9 +128,201 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 548.21s
+Early init took 97.41s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 176.12s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.23s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1536, 864) drawable=(1536, 864)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 7386.37s
+Loading error handling took 0.02s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 7554.36s
 Loading error handling took 0.01s
 Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 7875.45s
+Loading error handling took 0.01s
+Loading script took 0.07s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
 Running init code took 0.02s
@@ -703,7 +349,7 @@ Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
-Interface start took 0.24s
+Interface start took 0.21s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -716,7 +362,91 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 584.59s
+Early init took 7976.81s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8014.70s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8063.13s
 Loading error handling took 0.01s
 Loading script took 0.08s
 Loading save slot metadata took 0.02s
@@ -734,9 +464,149 @@ Initial gc took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
+Creating interface object took 0.17s
 Cleaning stores took 0.00s
 Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.31s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8085.96s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 8323.46s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8344.92s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
@@ -757,6 +627,943 @@ Version: b'4.6.0 NVIDIA 572.16'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
 Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8396.42s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8579.02s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/minigames/puzzle.rpy", line 59: if statement expects a non-empty block.
+    if number == 1:
+                   ^
+
+File "game/minigames/puzzle.rpy", line 95: expected statement.
+    elif number == 2:
+                ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.43s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8597.21s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+File "game/minigames/puzzle.rpy", line 59: if statement expects a non-empty block.
+    if number == 1:
+                   ^
+
+File "game/minigames/puzzle.rpy", line 95: expected statement.
+    elif number == 2:
+                ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.41s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8645.43s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/map/attic.rpy", line 51, in script
+    call screen attic
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
+    self.call("execute")
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 18, in execute
+    if not table:
+  File "game/map/attic.rpy", line 19, in execute
+    imagebutton:
+  File "game/map/attic.rpy", line 19, in keywords
+    imagebutton:
+  File "game/map/attic.rpy", line 23, in <module>
+    action Jump("puzzle_pieces", 2)
+TypeError: __init__() takes 2 positional arguments but 3 were given
+
+While running game code:
+  File "game/map/attic.rpy", line 51, in script
+    call screen attic
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 18, in execute
+    if not table:
+  File "game/map/attic.rpy", line 19, in execute
+    imagebutton:
+  File "game/map/attic.rpy", line 19, in keywords
+    imagebutton:
+  File "game/map/attic.rpy", line 23, in <module>
+    action Jump("puzzle_pieces", 2)
+TypeError: __init__() takes 2 positional arguments but 3 were given
+Resetting cache.
+Early init took 8696.92s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/map/attic.rpy", line 51, in script
+    call screen attic
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
+    self.call("execute")
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 18, in execute
+    if not table:
+  File "game/map/attic.rpy", line 19, in execute
+    imagebutton:
+  File "game/map/attic.rpy", line 19, in keywords
+    imagebutton:
+  File "game/map/attic.rpy", line 23, in <module>
+    action Jump("puzzle_pieces", [2])
+TypeError: __init__() takes 2 positional arguments but 3 were given
+
+While running game code:
+  File "game/map/attic.rpy", line 51, in script
+    call screen attic
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 18, in execute
+    if not table:
+  File "game/map/attic.rpy", line 19, in execute
+    imagebutton:
+  File "game/map/attic.rpy", line 19, in keywords
+    imagebutton:
+  File "game/map/attic.rpy", line 23, in <module>
+    action Jump("puzzle_pieces", [2])
+TypeError: __init__() takes 2 positional arguments but 3 were given
+Resetting cache.
+Early init took 8736.24s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8745.62s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+File "game/map/attic.rpy", line 23: 'with' is not a keyword argument or valid child of the imagebutton statement.
+    action Jump("puzzle_pieces") with numebr = 2
+                                     ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.45s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8751.79s
+Loading error handling took 0.01s
+Loading script took 0.06s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8762.61s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/map/attic.rpy", line 51, in script
+    call screen attic
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
+    self.call("execute")
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 18, in execute
+    if not table:
+  File "game/map/attic.rpy", line 19, in execute
+    imagebutton:
+  File "game/map/attic.rpy", line 19, in keywords
+    imagebutton:
+  File "game/map/attic.rpy", line 23, in <module>
+    action call("puzzle_pieces", 2)
+NameError: name 'call' is not defined
+
+While running game code:
+  File "game/map/attic.rpy", line 51, in script
+    call screen attic
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 18, in execute
+    if not table:
+  File "game/map/attic.rpy", line 19, in execute
+    imagebutton:
+  File "game/map/attic.rpy", line 19, in keywords
+    imagebutton:
+  File "game/map/attic.rpy", line 23, in <module>
+    action call("puzzle_pieces", 2)
+NameError: name 'call' is not defined
+Resetting cache.
+Early init took 8892.26s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+File "game/map/attic.rpy", line 19: 'global' is not a keyword argument or valid child of the screen statement.
+    global puzzle = 2
+          ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.42s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8908.91s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+File "game/map/attic.rpy", line 47: expected statement.
+    global puzzle = 2
+                  ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.43s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8924.08s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+File "game/map/attic.rpy", line 47: expected statement.
+    global puzzle
+                 ^
+
+File "game/map/attic.rpy", line 48: expected statement.
+    puzzle = 2
+           ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.39s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8931.69s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+File "game/map/attic.rpy", line 47: expected statement.
+    global puzzle 2
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.39s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 8932.54s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+File "game/map/attic.rpy", line 47: expected statement.
+    global puzzle 2
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.39s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 9024.33s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/map/attic.rpy", line 52, in script
+    call screen attic
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
+    self.call("execute")
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 18, in execute
+    if not table:
+  File "game/map/attic.rpy", line 19, in execute
+    imagebutton:
+  File "game/map/attic.rpy", line 19, in keywords
+    imagebutton:
+  File "game/map/attic.rpy", line 23, in <module>
+    action call("puzzle_pieces", 2)
+NameError: name 'call' is not defined
+
+While running game code:
+  File "game/map/attic.rpy", line 52, in script
+    call screen attic
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 11, in execute
+    screen attic:
+  File "game/map/attic.rpy", line 18, in execute
+    if not table:
+  File "game/map/attic.rpy", line 19, in execute
+    imagebutton:
+  File "game/map/attic.rpy", line 19, in keywords
+    imagebutton:
+  File "game/map/attic.rpy", line 23, in <module>
+    action call("puzzle_pieces", 2)
+NameError: name 'call' is not defined
+Resetting cache.
+Early init took 9041.08s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 9056.36s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 9222.38s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 9233.22s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
@@ -764,3 +1571,462 @@ Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+Resetting cache.
+Early init took 9278.83s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 9859.07s
+Loading error handling took 0.02s
+Loading script took 0.12s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 9866.88s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 9940.72s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 9971.14s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 10697.45s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+
+File "game/map/street.rpy", line 22: expected statement.
+    code_lock
+             ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.30s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 10729.13s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+
+Full traceback:
+  File "game/map/street.rpy", line 22, in script
+    call screen code_lock
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
+    self.call("execute")
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\exports\statementexports.py", line 331, in call_screen
+    renpy.exports.show_screen(_screen_name, *args, _transient=True, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 1327, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen code_lock is not known.
+
+
+While running game code:
+  File "game/map/street.rpy", line 22, in script
+    call screen code_lock
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+Exception: Screen code_lock is not known.
+
+Resetting cache.
+Early init took 10785.13s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/map/street.rpy", line 22, in script
+    show screen code_lock
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1974, in execute
+    self.call("execute")
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\display\screen.py", line 1327, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen code_lock is not known.
+
+
+While running game code:
+  File "game/map/street.rpy", line 22, in script
+    show screen code_lock
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+Exception: Screen code_lock is not known.
+
+Resetting cache.
+Early init took 10825.00s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 10846.41s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\khama\\AppData\\Roaming/RenPy/backups\\Novel':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 572.16'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1440) drawable=(2560, 1440)
+Maximum texture size: 4096x4096

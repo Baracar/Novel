@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/minigames/slide_ block.rpy", line 199: invalid character '（' (U+FF08)
-    long_v_block_size =（151,454)
-                        ^
-
-File "game/minigames/slide_ block.rpy", line 201: invalid character '（' (U+FF08)
-    short_v_block_size =（151,303)
-                         ^
-
-File "game/minigames/slide_ block.rpy", line 204: invalid character '（' (U+FF08)
-    puzzle_frame_pos =（110,71)
-                       ^
+File "game/map/street.rpy", line 22: expected statement.
+    code_lock
+             ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Sat Feb 22 15:51:17 2025
+Sat Feb 22 19:40:07 2025
