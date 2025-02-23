@@ -1,4 +1,4 @@
-image attic = im.Scale("images/bg/attic.png", 1920, 1080)
+image attic = im.Scale("locations/attic/attic.png", 1920, 1080)
 #image closet = im.Scale
 
 default first_visit_attic = True
@@ -18,28 +18,31 @@ screen attic:
             action Jump("home")
     if not table:
         imagebutton:
-            idle im.Scale("table.png", 611.25, 286.875)
-            xpos 490
-            ypos 693
+            idle im.Scale("locations/attic/desk.png", 617.8125, 337.5)
+            hover im.Scale("locations/attic/desk white.png", 617.8125, 337.5)
+            xpos 485
+            ypos 678
             action Call("puzzle_pieces", 1)
     if not closet:
         imagebutton:
-            idle im.Scale("closet.png", 496.75, 838.125)
+            idle im.Scale("locations/attic/closet.png", 516.5625, 840)
+            hover im.Scale("locations/attic/closet white.png", 516.5625, 840)
             xpos 1131
             ypos 239
             action Jump("tetris_start")
-    if not bed:
-        imagebutton:
-            idle im.Scale("bed.png", 460.3, 351.5)
-            xpos 46
-            ypos 724
-            action Jump("slide_block_puzzle")
-#     if not poster:
+#     if not bed:
 #         imagebutton:
-#             idle "poster.png"
-#             xpos 1550
-#             ypos 170
-#             action Jump("poster")
+#             idle im.Scale("bed.png", 460.3, 351.5)
+#             xpos 46
+#             ypos 724
+#             action Jump("slide_block_puzzle")
+    if not poster:
+        imagebutton:
+            idle im.Scale("locations/attic/poster.png", 261.5625, 618.75)
+            hover im.Scale("locations/attic/poster white.png", 261.5625, 618.75)
+            xpos 0
+            ypos 200
+            action Jump("poster")
 
 
 

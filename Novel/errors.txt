@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/map/home.rpy", line 80: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-            book_seller Дайте-ка вспомнить, на какое пэри это похоже… Совсем забыл название…"
+File "game/map/attic.rpy", line 39: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Sun Feb 23 21:38:24 2025
+Sun Feb 23 22:34:06 2025

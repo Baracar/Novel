@@ -3,6 +3,9 @@ image home = im.Scale("locations/home/bg.png", 1920, 1080)
 default first_visit_home = True
 default street_open = False
 
+default photo = False
+default safe = False
+
 screen home:
     imagebutton:
         idle "arrow_up"
@@ -27,6 +30,21 @@ screen home:
             xpos 950
             ypos 950
             action Jump("street")
+    if not photo:
+        imagebutton:
+            idle im.Scale("locations/home/photo baby.png", 77, 56.53125)
+            hover im.Scale("locations/home/photo baby white.png", 77, 56.53125)
+            xpos 274
+            ypos 188
+            action Jump("tetris_start")
+    if not photo:
+        imagebutton:
+            idle im.Scale("locations/home/safe.png", 140, 140.90625)
+            hover im.Scale("locations/home/safe white.png", 140, 140.90625)
+            xpos 672
+            ypos 230
+            action Jump("tetris_start")
+
 label home:
     scene home
 
