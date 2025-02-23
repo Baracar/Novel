@@ -3,13 +3,13 @@ screen drag_pieces():
     key "rollforward" action NullAction()
     key "dismiss" action NullAction()
 
-    #add "images/present/fortune/floor.jpg"
+    add "puzzle/attic/background.png"
 
     draggroup:
 
         drag:
-            child "puzzle/attic/background.png"
-            xpos field_x_pos ypos field_y_pos
+            child "puzzle/puzzle-frame.png"
+            xpos field_x_pos - 6 ypos field_y_pos - 6
             draggable False
             droppable False
 
@@ -34,9 +34,9 @@ init python:
     def piece_dragged(drags, drop):
         if not drop:
             return
-
+        delta = 50
         if drop.drag_name == drags[0].drag_name:
-            if abs(drags[0].x - drop.x) < 10 and abs(drags[0].y - drop.y) < 10:
+            if abs(drags[0].x - drop.x) < delta and abs(drags[0].y - drop.y) < delta:
                 i = drags[0].drag_name # 'cause we used "ind" as a name of draggable piece
                 drags[0].snap(drop.x, drop.y, delay=0.1)
                 store.pieces_list[i]["placed"] = True
@@ -54,8 +54,8 @@ init python:
 
 label puzzle_pieces(number):
     $ can_move = False
-    $ field_x_pos = 0
-    $ field_y_pos = 0
+    $ field_x_pos = 600
+    $ field_y_pos = 25
     if number == 1:
     # list of pieces
         $ pieces_list =[
@@ -73,18 +73,18 @@ label puzzle_pieces(number):
             {"ind":11, "img":"puzzle/attic/piece-12.png", "x_pos":0, "y_pos":0, "placed": False},
             ]
         $ places_list = [
-            {"ind":0, "img":"puzzle/attic/piece-1.png", "x_pos":500, "y_pos":50},
-            {"ind":1, "img":"puzzle/attic/piece-2.png", "x_pos":736, "y_pos":50},
-            {"ind":2, "img":"puzzle/attic/piece-3.png", "x_pos":925, "y_pos":50},
-            {"ind":3, "img":"puzzle/attic/piece-4.png", "x_pos":500, "y_pos":217},
-            {"ind":4, "img":"puzzle/attic/piece-5.png", "x_pos":658, "y_pos":318},
-            {"ind":5, "img":"puzzle/attic/piece-6.png", "x_pos":700, "y_pos":488},
-            {"ind":6, "img":"puzzle/attic/piece-7.png", "x_pos":796, "y_pos":538},
-            {"ind":7, "img":"puzzle/attic/piece-8.png", "x_pos":500, "y_pos":584},
-            {"ind":8, "img":"puzzle/attic/piece-9.png", "x_pos":776, "y_pos":773},
-            {"ind":9, "img":"puzzle/attic/piece-10.png", "x_pos":500, "y_pos":817},
-            {"ind":10, "img":"puzzle/attic/piece-11.png", "x_pos":743, "y_pos":958},
-            {"ind":11, "img":"puzzle/attic/piece-12.png", "x_pos":921, "y_pos":888},
+            {"ind":0, "img":"puzzle/empty.png", "x_pos":0, "y_pos":0},
+            {"ind":1, "img":"puzzle/empty.png", "x_pos":236, "y_pos":0},
+            {"ind":2, "img":"puzzle/empty.png", "x_pos":425, "y_pos":0},
+            {"ind":3, "img":"puzzle/empty.png", "x_pos":0, "y_pos":167},
+            {"ind":4, "img":"puzzle/empty.png", "x_pos":228, "y_pos":144},
+            {"ind":5, "img":"puzzle/empty.png", "x_pos":173, "y_pos":318},
+            {"ind":6, "img":"puzzle/empty.png", "x_pos":281, "y_pos":328},
+            {"ind":7, "img":"puzzle/empty.png", "x_pos":0, "y_pos":534},
+            {"ind":8, "img":"puzzle/empty.png", "x_pos":242, "y_pos":592},
+            {"ind":9, "img":"puzzle/empty.png", "x_pos":0, "y_pos":766},
+            {"ind":10, "img":"puzzle/empty.png", "x_pos":299, "y_pos":832},
+            {"ind":11, "img":"puzzle/empty.png", "x_pos":531, "y_pos":692},
             ]
     elif number == 2:
         $ pieces_list =[
@@ -100,10 +100,13 @@ label puzzle_pieces(number):
 
 
     # sets random coordinates for pieces
-#     python:
-#         for piece in pieces_list:
-#             pieces_list[piece["ind"]]["x_pos"] = renpy.random.randint(10, 320)
-#             pieces_list[piece["ind"]]["y_pos"] = renpy.random.randint(10, 720)
+    python:
+        for piece in pieces_list:
+            if piece["ind"] % 2 == 0:
+                pieces_list[piece["ind"]]["x_pos"] = renpy.random.randint(10, 250)
+            else:
+                pieces_list[piece["ind"]]["x_pos"] = renpy.random.randint(10, 250) + 1350
+            pieces_list[piece["ind"]]["y_pos"] = renpy.random.randint(10, 720)
 
     show screen drag_pieces
     $ can_move = True
