@@ -1,6 +1,6 @@
 init:
     image Items milk_jug = Image("images/Items/milk_jug.png")
-    image Items book_myth = Image("images/Items/myph_kzn_book.png")
+    image Items book_myth = Image("images/Items/myph_kzn_book.jpg")
     image Items photo_child = Image("images/Items/photo_baby.png")
     image Items toy_car = Image("images/Items/toy_auto.png")
     image Items bill_electricity = Image("images/Items/electricity_bill.png")

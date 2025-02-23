@@ -21,7 +21,7 @@ screen attic:
             idle im.Scale("table.png", 611.25, 286.875)
             xpos 490
             ypos 693
-            action Call("puzzle_pieces", 2)
+            action Call("puzzle_pieces", 1)
     if not closet:
         imagebutton:
             idle im.Scale("closet.png", 496.75, 838.125)
@@ -60,6 +60,7 @@ label attic:
 
 
 label attic_puzzle:
+    "asdasda"
     #ADD TEXT тест после решения паззла с бумажками
     $table = True
     call screen attic

@@ -8,7 +8,7 @@ screen drag_pieces():
     draggroup:
 
         drag:
-            child "images/present/fortune/square.jpg"
+            child "puzzle/attic/background.png"
             xpos field_x_pos ypos field_y_pos
             draggable False
             droppable False
@@ -59,38 +59,32 @@ label puzzle_pieces(number):
     if number == 1:
     # list of pieces
         $ pieces_list =[
-            {"ind":0, "img":"present/fortune/0_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":1, "img":"present/fortune/1_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":2, "img":"present/fortune/2_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":3, "img":"present/fortune/3_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":4, "img":"present/fortune/4_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":5, "img":"present/fortune/5_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":6, "img":"present/fortune/6_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":7, "img":"present/fortune/7_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":8, "img":"present/fortune/8_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":9, "img":"present/fortune/9_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":10, "img":"present/fortune/10_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":11, "img":"present/fortune/11_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":12, "img":"present/fortune/12_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":13, "img":"present/fortune/13_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":14, "img":"present/fortune/14_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":0, "img":"puzzle/attic/piece-1.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":1, "img":"puzzle/attic/piece-2.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":2, "img":"puzzle/attic/piece-3.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":3, "img":"puzzle/attic/piece-4.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":4, "img":"puzzle/attic/piece-5.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":5, "img":"puzzle/attic/piece-6.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":6, "img":"puzzle/attic/piece-7.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":7, "img":"puzzle/attic/piece-8.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":8, "img":"puzzle/attic/piece-9.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":9, "img":"puzzle/attic/piece-10.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":10, "img":"puzzle/attic/piece-11.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":11, "img":"puzzle/attic/piece-12.png", "x_pos":0, "y_pos":0, "placed": False},
             ]
         $ places_list = [
-            {"ind":0, "img":"present/fortune/0_drop.png", "x_pos":762, "y_pos":746},
-            {"ind":1, "img":"present/fortune/1_drop.png", "x_pos":752, "y_pos":0},
-            {"ind":2, "img":"present/fortune/2_drop.png", "x_pos":966, "y_pos":502},
-            {"ind":3, "img":"present/fortune/3_drop.png", "x_pos":759, "y_pos":571},
-            {"ind":4, "img":"present/fortune/4_drop.png", "x_pos":982, "y_pos":336},
-            {"ind":5, "img":"present/fortune/5_drop.png", "x_pos":986, "y_pos":199},
-            {"ind":6, "img":"present/fortune/6_drop.png", "x_pos":750, "y_pos":143},
-            {"ind":7, "img":"present/fortune/7_drop.png", "x_pos":1236, "y_pos":440},
-            {"ind":8, "img":"present/fortune/8_drop.png", "x_pos":1112, "y_pos":176},
-            {"ind":9, "img":"present/fortune/9_drop.png", "x_pos":1322, "y_pos":578},
-            {"ind":10, "img":"present/fortune/10_drop.png", "x_pos":1605, "y_pos":652},
-            {"ind":11, "img":"present/fortune/11_drop.png", "x_pos":1466, "y_pos":226},
-            {"ind":12, "img":"present/fortune/12_drop.png", "x_pos":1620, "y_pos":0},
-            {"ind":13, "img":"present/fortune/13_drop.png", "x_pos":1348, "y_pos":0},
-            {"ind":14, "img":"present/fortune/14_drop.png", "x_pos":1222, "y_pos":0},
+            {"ind":0, "img":"puzzle/attic/piece-1.png", "x_pos":500, "y_pos":50},
+            {"ind":1, "img":"puzzle/attic/piece-2.png", "x_pos":736, "y_pos":50},
+            {"ind":2, "img":"puzzle/attic/piece-3.png", "x_pos":925, "y_pos":50},
+            {"ind":3, "img":"puzzle/attic/piece-4.png", "x_pos":500, "y_pos":217},
+            {"ind":4, "img":"puzzle/attic/piece-5.png", "x_pos":658, "y_pos":318},
+            {"ind":5, "img":"puzzle/attic/piece-6.png", "x_pos":700, "y_pos":488},
+            {"ind":6, "img":"puzzle/attic/piece-7.png", "x_pos":796, "y_pos":538},
+            {"ind":7, "img":"puzzle/attic/piece-8.png", "x_pos":500, "y_pos":584},
+            {"ind":8, "img":"puzzle/attic/piece-9.png", "x_pos":776, "y_pos":773},
+            {"ind":9, "img":"puzzle/attic/piece-10.png", "x_pos":500, "y_pos":817},
+            {"ind":10, "img":"puzzle/attic/piece-11.png", "x_pos":743, "y_pos":958},
+            {"ind":11, "img":"puzzle/attic/piece-12.png", "x_pos":921, "y_pos":888},
             ]
     elif number == 2:
         $ pieces_list =[
@@ -106,14 +100,15 @@ label puzzle_pieces(number):
 
 
     # sets random coordinates for pieces
-    python:
-        for piece in pieces_list:
-            pieces_list[piece["ind"]]["x_pos"] = renpy.random.randint(10, 320)
-            pieces_list[piece["ind"]]["y_pos"] = renpy.random.randint(10, 720)
+#     python:
+#         for piece in pieces_list:
+#             pieces_list[piece["ind"]]["x_pos"] = renpy.random.randint(10, 320)
+#             pieces_list[piece["ind"]]["y_pos"] = renpy.random.randint(10, 720)
 
     show screen drag_pieces
     $ can_move = True
     #ADD TEXT тест во время решения бумажек
+    pause
     $ can_move = False
     $ renpy.pause(1.0)
     hide screen drag_pieces
