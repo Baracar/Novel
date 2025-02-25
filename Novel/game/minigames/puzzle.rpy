@@ -3,7 +3,7 @@ screen drag_pieces():
     key "rollforward" action NullAction()
     key "dismiss" action NullAction()
 
-    add "puzzle/attic/background.png"
+    add "puzzle/attic_desk/background.png"
 
     draggroup:
 
@@ -52,11 +52,11 @@ init python:
 
         return
 
-label puzzle_pieces(number):
+label puzzle_pieces(name):
     $ can_move = False
     $ field_x_pos = 600
     $ field_y_pos = 25
-    if number == "desk":
+    if name == "desk":
     # list of pieces
         $ pieces_list =[
             {"ind":0, "img":"puzzle/attic_desk/piece-1.png", "x_pos":0, "y_pos":0, "placed": False},
@@ -72,7 +72,7 @@ label puzzle_pieces(number):
             {"ind":10, "img":"puzzle/attic_desk/piece-11.png", "x_pos":0, "y_pos":0, "placed": False},
             {"ind":11, "img":"puzzle/attic_desk/piece-12.png", "x_pos":0, "y_pos":0, "placed": False},
             ]
-    elif number == "closet":
+    elif name == "closet":
         $ pieces_list =[
             {"ind":0, "img":"puzzle/attic_closet/piece-1.png", "x_pos":0, "y_pos":0, "placed": False},
             {"ind":1, "img":"puzzle/attic_closet/piece-2.png", "x_pos":0, "y_pos":0, "placed": False},
@@ -86,6 +86,21 @@ label puzzle_pieces(number):
             {"ind":9, "img":"puzzle/attic_closet/piece-10.png", "x_pos":0, "y_pos":0, "placed": False},
             {"ind":10, "img":"puzzle/attic_closet/piece-11.png", "x_pos":0, "y_pos":0, "placed": False},
             {"ind":11, "img":"puzzle/attic_closet/piece-12.png", "x_pos":0, "y_pos":0, "placed": False},
+            ]
+    elif name == "fridge":
+        $ pieces_list =[
+            {"ind":0, "img":"puzzle/kitchen_fridge/piece-1.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":1, "img":"puzzle/kitchen_fridge/piece-2.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":2, "img":"puzzle/kitchen_fridge/piece-3.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":3, "img":"puzzle/kitchen_fridge/piece-4.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":4, "img":"puzzle/kitchen_fridge/piece-5.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":5, "img":"puzzle/kitchen_fridge/piece-6.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":6, "img":"puzzle/kitchen_fridge/piece-7.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":7, "img":"puzzle/kitchen_fridge/piece-8.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":8, "img":"puzzle/kitchen_fridge/piece-9.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":9, "img":"puzzle/kitchen_fridge/piece-10.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":10, "img":"puzzle/kitchen_fridge/piece-11.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":11, "img":"puzzle/kitchen_fridge/piece-12.png", "x_pos":0, "y_pos":0, "placed": False},
             ]
     $ places_list = [
         {"ind":0, "img":"puzzle/empty.png", "x_pos":0, "y_pos":0},
@@ -119,10 +134,12 @@ label puzzle_pieces(number):
     $ can_move = False
     $ renpy.pause(1.0)
     hide screen drag_pieces
-    if number == 1:
-        call attic_puzzle
-    else:
-        call attic_puzzle
+    if name == "desk":
+        call puzzle_desk
+    elif name == "closet":
+        call puzzle_closet
+    elif name == "fridge":
+        call puzzle_fridge
 
 label drag_quit:
     $ can_move = False

@@ -1,7 +1,7 @@
 init:
 # Items - картинка в инвентаре, Descr - картинка с описанием
-    image Items milk_jug = Image("images/Items/milk_jug.png")
-    image Descr milk_jug = Image("images/Items/milk_jug.png")
+    image Items milk_jar = Image("images/Items/milk_jar.png")
+    image Descr milk_jar = Image("images/Items/milk_jar.png")
     image Items book_myth = Image("images/Items/myph_kzn_book.jpg")
     image Descr book_myth = Image("images/Items/myph_kzn_book.jpg")
     image Items photo_child = Image("images/Items/photo_baby.png")
@@ -18,6 +18,10 @@ init:
     image Descr poster_edge = Image("images/Items/poster_edge.png")
     image Items coin = Image("images/Items/coin.png")
     image Descr coin = Image("images/Items/coin.png")
+    image Items old_papers = Image("images/Items/old_papers.png")
+    image Descr old_papers = Image("images/Items/old_papers.png")
+    image Items dirty_cup = Image("images/Items/dirty_cup.png")
+    image Descr dirty_cup = Image("images/Items/dirty_cup.png")
     image Items father_info = Image("images/Items/file_father.png")
     image Descr father_info = Image("images/Items/file_father.png")
     image Items grandma_info = Image("images/Items/file_abi.png")
@@ -31,7 +35,7 @@ init python:
 #             self.desc = desc
 
     items = {
-    "milk_jug": _("Молочник"),
+    "milk_jar": _("Молочник"),
     "book_myth": _("Книга \"Мифология Казанских татар\""),
     "photo_child": _("Фото ребёнка в костюме зайки"),
     "toy_car": _("Старая игрушечная машинка"),
@@ -40,6 +44,8 @@ init python:
     "kefir": _("Полупустая бутылка кефира"),
     "poster_edge": _("Кусок плаката"),
     "coin": _("Монета 10 сум"),
+    "old_papers": _("Макулатура"),
+    "dirty_cup": _("Грязная кружка"),
     "father_info": _("Папа"),
     "grandma_info": _("Эби")
     }

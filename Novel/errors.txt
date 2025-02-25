@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/items.rpy", line 94: 'Action' is not a keyword argument or valid child of the imagebutton statement.
-    Action Hide("description")
-          ^
+File "game/items.rpy", line 49: invalid syntax
+        "father_info": _("Папа"),
+         ^
 
 Ren'Py Version: Ren'Py 8.3.3.24111502
-Tue Feb 25 10:26:06 2025
+Tue Feb 25 11:25:12 2025

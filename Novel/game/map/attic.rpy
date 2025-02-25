@@ -30,12 +30,12 @@ screen attic:
             xpos 1131
             ypos 239
             action Call("puzzle_pieces", "closet")
-#     if not bed:
-#         imagebutton:
-#             idle im.Scale("bed.png", 460.3, 351.5)
-#             xpos 46
-#             ypos 724
-#             action Jump("slide_block_puzzle")
+    if poster and not bed:
+        imagebutton:
+            idle im.Scale("bed.png", 460.3, 351.5)
+            xpos 46
+            ypos 724
+            action Jump("slide_block_puzzle")
     if not poster:
         imagebutton:
             idle im.Scale("locations/attic/poster.png", 261.5625, 618.75)
@@ -63,7 +63,11 @@ label attic:
 
 
 label puzzle_desk:
-    "asdasda"
+    #ADD TEXT тест после решения паззла с бумажками
+    $table = True
+    call screen attic
+
+label puzzle_closet:
     #ADD TEXT тест после решения паззла с бумажками
     $table = True
     call screen attic
@@ -76,6 +80,7 @@ label attic_tetris:
 label attic_slide:
     #ADD TEXT тест после решения паззла с блоками
     $bed = True
+    $iclick("poster_edge")
     call screen attic
 
 label poster:
