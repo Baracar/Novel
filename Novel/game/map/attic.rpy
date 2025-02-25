@@ -22,14 +22,14 @@ screen attic:
             hover im.Scale("locations/attic/desk white.png", 617.8125, 337.5)
             xpos 485
             ypos 678
-            action Call("puzzle_pieces", 1)
+            action Call("puzzle_pieces", "desk")
     if not closet:
         imagebutton:
             idle im.Scale("locations/attic/closet.png", 516.5625, 840)
             hover im.Scale("locations/attic/closet white.png", 516.5625, 840)
             xpos 1131
             ypos 239
-            action Jump("tetris_start")
+            action Call("puzzle_pieces", "closet")
 #     if not bed:
 #         imagebutton:
 #             idle im.Scale("bed.png", 460.3, 351.5)
@@ -62,7 +62,7 @@ label attic:
     call screen attic
 
 
-label attic_puzzle:
+label puzzle_desk:
     "asdasda"
     #ADD TEXT тест после решения паззла с бумажками
     $table = True

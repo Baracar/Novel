@@ -56,47 +56,51 @@ label puzzle_pieces(number):
     $ can_move = False
     $ field_x_pos = 600
     $ field_y_pos = 25
-    if number == 1:
+    if number == "desk":
     # list of pieces
         $ pieces_list =[
-            {"ind":0, "img":"puzzle/attic/piece-1.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":1, "img":"puzzle/attic/piece-2.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":2, "img":"puzzle/attic/piece-3.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":3, "img":"puzzle/attic/piece-4.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":4, "img":"puzzle/attic/piece-5.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":5, "img":"puzzle/attic/piece-6.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":6, "img":"puzzle/attic/piece-7.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":7, "img":"puzzle/attic/piece-8.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":8, "img":"puzzle/attic/piece-9.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":9, "img":"puzzle/attic/piece-10.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":10, "img":"puzzle/attic/piece-11.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":11, "img":"puzzle/attic/piece-12.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":0, "img":"puzzle/attic_desk/piece-1.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":1, "img":"puzzle/attic_desk/piece-2.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":2, "img":"puzzle/attic_desk/piece-3.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":3, "img":"puzzle/attic_desk/piece-4.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":4, "img":"puzzle/attic_desk/piece-5.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":5, "img":"puzzle/attic_desk/piece-6.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":6, "img":"puzzle/attic_desk/piece-7.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":7, "img":"puzzle/attic_desk/piece-8.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":8, "img":"puzzle/attic_desk/piece-9.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":9, "img":"puzzle/attic_desk/piece-10.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":10, "img":"puzzle/attic_desk/piece-11.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":11, "img":"puzzle/attic_desk/piece-12.png", "x_pos":0, "y_pos":0, "placed": False},
             ]
-        $ places_list = [
-            {"ind":0, "img":"puzzle/empty.png", "x_pos":0, "y_pos":0},
-            {"ind":1, "img":"puzzle/empty.png", "x_pos":236, "y_pos":0},
-            {"ind":2, "img":"puzzle/empty.png", "x_pos":425, "y_pos":0},
-            {"ind":3, "img":"puzzle/empty.png", "x_pos":0, "y_pos":167},
-            {"ind":4, "img":"puzzle/empty.png", "x_pos":228, "y_pos":144},
-            {"ind":5, "img":"puzzle/empty.png", "x_pos":173, "y_pos":318},
-            {"ind":6, "img":"puzzle/empty.png", "x_pos":281, "y_pos":328},
-            {"ind":7, "img":"puzzle/empty.png", "x_pos":0, "y_pos":534},
-            {"ind":8, "img":"puzzle/empty.png", "x_pos":242, "y_pos":592},
-            {"ind":9, "img":"puzzle/empty.png", "x_pos":0, "y_pos":766},
-            {"ind":10, "img":"puzzle/empty.png", "x_pos":299, "y_pos":832},
-            {"ind":11, "img":"puzzle/empty.png", "x_pos":531, "y_pos":692},
-            ]
-    elif number == 2:
+    elif number == "closet":
         $ pieces_list =[
-            {"ind":0, "img":"present/fortune/0_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":1, "img":"present/fortune/1_drag.png", "x_pos":0, "y_pos":0, "placed": False},
-            {"ind":2, "img":"present/fortune/2_drag.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":0, "img":"puzzle/attic_closet/piece-1.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":1, "img":"puzzle/attic_closet/piece-2.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":2, "img":"puzzle/attic_closet/piece-3.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":3, "img":"puzzle/attic_closet/piece-4.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":4, "img":"puzzle/attic_closet/piece-5.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":5, "img":"puzzle/attic_closet/piece-6.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":6, "img":"puzzle/attic_closet/piece-7.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":7, "img":"puzzle/attic_closet/piece-8.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":8, "img":"puzzle/attic_closet/piece-9.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":9, "img":"puzzle/attic_closet/piece-10.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":10, "img":"puzzle/attic_closet/piece-11.png", "x_pos":0, "y_pos":0, "placed": False},
+            {"ind":11, "img":"puzzle/attic_closet/piece-12.png", "x_pos":0, "y_pos":0, "placed": False},
             ]
-        $places_list = [
-            {"ind":0, "img":"present/fortune/0_drop.png", "x_pos":762, "y_pos":746},
-            {"ind":1, "img":"present/fortune/1_drop.png", "x_pos":752, "y_pos":0},
-            {"ind":2, "img":"present/fortune/2_drop.png", "x_pos":966, "y_pos":502},
-            ]
+    $ places_list = [
+        {"ind":0, "img":"puzzle/empty.png", "x_pos":0, "y_pos":0},
+        {"ind":1, "img":"puzzle/empty.png", "x_pos":236, "y_pos":0},
+        {"ind":2, "img":"puzzle/empty.png", "x_pos":425, "y_pos":0},
+        {"ind":3, "img":"puzzle/empty.png", "x_pos":0, "y_pos":167},
+        {"ind":4, "img":"puzzle/empty.png", "x_pos":228, "y_pos":144},
+        {"ind":5, "img":"puzzle/empty.png", "x_pos":173, "y_pos":318},
+        {"ind":6, "img":"puzzle/empty.png", "x_pos":281, "y_pos":328},
+        {"ind":7, "img":"puzzle/empty.png", "x_pos":0, "y_pos":534},
+        {"ind":8, "img":"puzzle/empty.png", "x_pos":242, "y_pos":592},
+        {"ind":9, "img":"puzzle/empty.png", "x_pos":0, "y_pos":766},
+        {"ind":10, "img":"puzzle/empty.png", "x_pos":299, "y_pos":832},
+        {"ind":11, "img":"puzzle/empty.png", "x_pos":531, "y_pos":692},
+        ]
 
 
     # sets random coordinates for pieces

@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/simple_inventory.rpy", line 21, in script
-    init 444 python:
-  File "game/simple_inventory.rpy", line 22, in <module>
-    IClickSlot = renpy.curry(iclick_slot)
-NameError: name 'iclick_slot' is not defined
+  File "game/items.rpy", line 26, in script
+    init python:
+  File "game/items.rpy", line 63, in <module>
+    "newspaper": _("Свежая газета", "images/Items/newspaper.png"),
+TypeError: _() takes 1 positional argument but 2 were given
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/simple_inventory.rpy", line 21, in script
-    init 444 python:
+  File "game/items.rpy", line 26, in script
+    init python:
   File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 821, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\Programms\renpy-8.3.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/simple_inventory.rpy", line 22, in <module>
-    IClickSlot = renpy.curry(iclick_slot)
-NameError: name 'iclick_slot' is not defined
+  File "game/items.rpy", line 63, in <module>
+    "newspaper": _("Свежая газета", "images/Items/newspaper.png"),
+TypeError: _() takes 1 positional argument but 2 were given
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.3.24111502
 Novel 1.0
-Sat Feb 22 20:12:22 2025
+Tue Feb 25 10:30:08 2025

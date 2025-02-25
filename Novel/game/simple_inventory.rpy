@@ -30,7 +30,7 @@ init 444 python:
 # можно добавить комментарии при собирании предметов, что вызывается из iclick(id):
 init -4 python:
     def iclick_item(id):
-        renpy.notify(_("Вы получили предмет: ") + items[id][0] + ".")
+        renpy.notify(_("Вы получили предмет: ") + items[id] + ".")
 
 ## НАСТРОЙКИ
 init -5 python:
