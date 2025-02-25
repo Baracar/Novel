@@ -1,9 +1,9 @@
 init:
 # Items - картинка в инвентаре, Descr - картинка с описанием
     image Items milk_jar = Image("images/Items/milk_jar.png")
-    image Descr milk_jar = Image("images/Items/milk_jar.png")
+    image Descr milk_jar = Image("images/Items/info milk jar.png")
     image Items book_myth = Image("images/Items/myph_kzn_book.jpg")
-    image Descr book_myth = Image("images/Items/myph_kzn_book.jpg")
+    image Descr book_myth = Image("images/Items/info book.png")
     image Items photo_child = Image("images/Items/photo_baby.png")
     image Descr photo_child = Image("images/Items/photo_baby.png")
     image Items toy_car = Image("images/Items/toy_auto.png")
@@ -11,7 +11,7 @@ init:
     image Items bill_electricity = Image("images/Items/electricity_bill.png")
     image Descr bill_electricity = Image("images/Items/electricity_bill.png")
     image Items newspaper = Image("images/Items/newspaper.png")
-    image Descr newspaper = Image("images/Items/newspaper.png")
+    image Descr newspaper = Image("images/Items/info newspaper.png")
     image Items kefir = Image("images/Items/kefir_bottle.png")
     image Descr kefir = Image("images/Items/kefir_bottle.png")
     image Items poster_edge = Image("images/Items/poster_edge.png")
@@ -22,6 +22,8 @@ init:
     image Descr old_papers = Image("images/Items/old_papers.png")
     image Items dirty_cup = Image("images/Items/dirty_cup.png")
     image Descr dirty_cup = Image("images/Items/dirty_cup.png")
+    image Items child_craft = Image("images/Items/child_craft.jpg")
+    image Descr child_craft = Image("images/Items/child_craft.jpg")
     image Items father_info = Image("images/Items/file_father.png")
     image Descr father_info = Image("images/Items/file_father.png")
     image Items grandma_info = Image("images/Items/file_abi.png")
@@ -38,7 +40,7 @@ init python:
     "milk_jar": _("Молочник"),
     "book_myth": _("Книга \"Мифология Казанских татар\""),
     "photo_child": _("Фото ребёнка в костюме зайки"),
-    "toy_car": _("Старая игрушечная машинка"),
+#     "toy_car": _("Старая игрушечная машинка"),
     "bill_electricity": _("Счета за электричество"),
     "newspaper": _("Свежая газета"),
     "kefir": _("Полупустая бутылка кефира"),
@@ -46,6 +48,7 @@ init python:
     "coin": _("Монета 10 сум"),
     "old_papers": _("Макулатура"),
     "dirty_cup": _("Грязная кружка"),
+    "child_craft": _("Детская поделка"),
     "father_info": _("Папа"),
     "grandma_info": _("Эби")
     }

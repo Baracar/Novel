@@ -15,22 +15,22 @@ screen kitchen:
         imagebutton:
             idle im.Scale("locations/kitchen/refrigerator.png", 416, 774.5625)
             hover im.Scale("locations/kitchen/refrigerator white.png", 416, 774.5625)
-            xpos 50
-            ypos 678
+            xpos 97
+            ypos 306
             action Call("puzzle_pieces", "fridge")
     if not dirty_cup:
         imagebutton:
-            idle im.Scale("locations/kitchen/dirty cup.png", 357, 321)
-            hover im.Scale("locations/kitchen/dirty cup white.png", 357, 321)
-            xpos 1685
-            ypos 678
+            idle im.Scale("locations/kitchen/dirty cup.png", 100, 100)
+            hover im.Scale("locations/kitchen/dirty cup white.png", 100, 100)
+            xpos 1585
+            ypos 540
             action Call("dirty_cup")
     if not milk_jar:
         imagebutton:
             idle im.Scale("locations/kitchen/milk jar.png", 177, 150.1875)
             hover im.Scale("locations/kitchen/milk jar white.png", 177, 150.1875)
-            xpos 1485
-            ypos 678
+            xpos 1353
+            ypos 721
             action Call("milk_jar")
 
 
@@ -58,6 +58,7 @@ label kitchen:
 
 label puzzle_fridge:
     #ADD TEXT тест после решения паззла в холодильнике
+    $iclick("kefir")
     $fridge = True
     call screen kitchen
 

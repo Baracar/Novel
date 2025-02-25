@@ -1,6 +1,7 @@
 image street = im.Scale("locations/street/bg.png", 1920, 1080)
 
 default first_visit_street = 0
+default mailbox = False
 
 screen street:
     imagebutton:
@@ -14,6 +15,13 @@ screen street:
             xpos 50
             ypos 500
             action Jump("book_shop")
+    if not mailbox:
+        imagebutton:
+            idle im.Scale("locations/street/mailbox.png", 100, 100)
+            hover im.Scale("locations/street/mailbox white.png", 100, 100)
+            xpos 1730
+            ypos 680
+            action Call("mailbox")
 
 
 label street:
@@ -29,3 +37,12 @@ label street:
 
     call screen street
 
+
+label mailbox:
+    if "old_papers" in inventory:
+        mc "У меня сейчас заняты руки. В другой раз."
+    else:
+        $mailbox = True
+        $iclick("bill_electricity")
+        $iclick("newspaper")
+    call screen street

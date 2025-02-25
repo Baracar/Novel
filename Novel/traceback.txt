@@ -1,50 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/map/kitchen.rpy", line 57, in script call
-    call screen kitchen
-  File "game/map/kitchen.rpy", line 74, in script call
-    call screen kitchen
-  File "game/map/kitchen.rpy", line 68, in script call
-    call screen kitchen
-  File "game/minigames/puzzle.rpy", line 142, in script call
-    call attic_puzzle
-  File "game/map/kitchen.rpy", line 57, in script call
-    call screen kitchen
-  File "game/map/kitchen.rpy", line 74, in script call
-    call screen kitchen
-  File "game/map/kitchen.rpy", line 68, in script call
-    call screen kitchen
-  File "game/minigames/puzzle.rpy", line 142, in script call
-    call attic_puzzle
-ScriptError: could not find label 'attic_puzzle'.
+  File "game/map/street.rpy", line 38, in script call
+    call screen street
+  File "game/map/street.rpy", line 42, in script
+    if IContain("old_papers"):
+  File "game/map/street.rpy", line 42, in <module>
+    if IContain("old_papers"):
+NameError: name 'IContain' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/map/kitchen.rpy", line 57, in script call
-    call screen kitchen
-  File "game/map/kitchen.rpy", line 74, in script call
-    call screen kitchen
-  File "game/map/kitchen.rpy", line 68, in script call
-    call screen kitchen
-  File "game/minigames/puzzle.rpy", line 142, in script call
-    call attic_puzzle
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1414, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/map/kitchen.rpy", line 57, in script call
-    call screen kitchen
-  File "game/map/kitchen.rpy", line 74, in script call
-    call screen kitchen
-  File "game/map/kitchen.rpy", line 68, in script call
-    call screen kitchen
-  File "game/minigames/puzzle.rpy", line 142, in script call
-    call attic_puzzle
-  File "D:\Programms\renpy-8.3.3-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'attic_puzzle'.
+  File "game/map/street.rpy", line 38, in script call
+    call screen street
+  File "game/map/street.rpy", line 42, in script
+    if IContain("old_papers"):
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\ast.py", line 1843, in execute
+    if renpy.python.py_eval(condition):
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Programms\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/map/street.rpy", line 42, in <module>
+    if IContain("old_papers"):
+NameError: name 'IContain' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.3.24111502
 Novel 1.0
-Tue Feb 25 11:27:34 2025
+Tue Feb 25 14:46:31 2025

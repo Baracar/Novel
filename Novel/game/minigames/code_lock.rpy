@@ -1,3 +1,5 @@
+default safe_open = False
+
 init python:
     numbl = 0
     numbc = 0
@@ -19,7 +21,8 @@ screen code_lock:
     add "images/code_lock/cl_%s.png"%(numbr) xalign .52 yalign .47 zoom 0.9
     imagebutton auto "images/code_lock/dwn_%s.png" focus_mask True xalign .518 yalign .59 action If(numbr > 0, SetVariable("numbr", numbr - 1), SetVariable("numbr", 9))
 
-    textbutton "ENTER" yalign .61 xalign .656 action If(numbl == 7, If(numbc == 7, If(numbr == 7, Hide("code_lock"), Show("access_denied")), Show("access_denied")), Show("access_denied"))
+    textbutton "ENTER" yalign .61 xalign .656 action If(numbl == 1, If(numbc == 0, If(numbr == 3, [SetVariable("safe_open", True), Hide("code_lock"), Call("after_safe")])))#, Show("access_denied")), Show("access_denied")), Show("access_denied"))
+    textbutton "CLOSE" yalign .31 xalign .656 action [Hide("code_lock"), Call("after_safe")]
 
 screen access_denied:
     modal True

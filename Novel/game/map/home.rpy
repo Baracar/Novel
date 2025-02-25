@@ -5,6 +5,7 @@ default street_open = False
 
 default photo = False
 default safe = False
+default tv = False
 
 screen home:
     imagebutton:
@@ -36,14 +37,21 @@ screen home:
             hover im.Scale("locations/home/photo baby white.png", 77, 56.53125)
             xpos 274
             ypos 188
-            action Jump("tetris_start")
-    if not photo:
+            action Jump("photo")
+    if not safe:
         imagebutton:
             idle im.Scale("locations/home/safe.png", 140, 140.90625)
             hover im.Scale("locations/home/safe white.png", 140, 140.90625)
             xpos 672
             ypos 230
-            action Jump("tetris_start")
+            action Jump("safe")
+    if not tv:
+        imagebutton:
+            idle im.Scale("locations/home/tv.png", 422, 268.3125)
+            hover im.Scale("locations/home/tv white.png", 422, 268.3125)
+            xpos 1195
+            ypos 270
+            action Jump("tv")
 
 label home:
     scene home
@@ -56,6 +64,7 @@ label home:
         father "Ну ничего страшного, тут всё есть. Я вижу, у тебя с собой какие-то вещи, можешь разложить их на чердаке."
         father "Там была моя комната. Когда освоишься, приходи на кухню."
         hide father normal
+        $iclick("father_info")
         $first_visit_home = False
     elif after_take_book:
         mc "Думаю пойду наверх, почитаю книгу."
@@ -290,4 +299,25 @@ label not_kitchen:
     mc "{i}Думаю сначала схожу на чердак, оставлю вещи.{/i}"
     call screen home
 
+label photo:
+    #ADD TEXT тест после подбора кружки
+    $photo = True
+    $iclick("photo_child")
+    call screen home
 
+label safe:
+    #ADD TEXT тест после подбора кружки
+    call screen code_lock
+
+label after_safe:
+    if safe_open:
+        $safe = True
+        $iclick("child_craft")
+    call screen home
+
+
+label tv:
+    #ADD TEXT тест после телевизора
+    mc "Этот  телевизор ловит только каналы на татарском языке. Надо будет его настроить. Но не сегодня"
+    $tv = True
+    call screen home

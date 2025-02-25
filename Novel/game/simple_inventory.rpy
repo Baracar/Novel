@@ -186,6 +186,16 @@ init -5 python:
 
     IClick = renpy.curry(iclick)
 
+    def iremove(id):
+        if id in inventory: inventory.remove(id)
+
+    IRemove = renpy.curry(iremove)
+
+    def icontains(id):
+        return id in inventory
+
+    IContains = renpy.curry(icontains)
+
     # клик по предмету в инвентаре
 #     def iclick_slot(id):
 #         pass
